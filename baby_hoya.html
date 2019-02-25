@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WEB실습</title>
+  <style>
+    #grid {
+      display:grid;
+      grid-template-columns:133px 1fr;
+    }
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration:none;
+    }
+    a:visited{
+      color:purple;
+    }
+    h1 {
+      font-size:45px;
+      text-align:center;
+      border-bottom:1px gray solid;
+      margin:0;
+      padding:20px;
+    }
+    #grid ol {
+      border-right:1px gray solid;
+      width:80px;
+      margin:0;
+      padding:20px;
+      padding-left:33px;
+    }
+    #grid #article {
+      padding-left:25px;
+    }
+    @media(max-width:500px) {
+      #grid{display:block;}
+      h1 {font-size:30px; border-bottom:none;}
+      #grid ol {border-right:none;}
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">호야</a></h1>
+  <div id=grid>
+      <ol>
+        <li><a href="baby_hoya.html">애기호야</a></li>
+        <li><a href="big_hoya.html">청소년호야 </a></li>
+        <li><a href="babo_hoya.html">바보호야</a></li>
+      </ol>
+    <div id="article">
+      <h2>애기호야</h2>
+      <img src="baby_hoya1.jpg" width="400px">
+      <p>호야는 굉장히 귀엽다</p><br>
+      <img src="baby_hoya2.jpg" width="400px">
+      <p>이땐 참 애기애기하였는데</p><br>
+      <img src="baby_hoya3.jpg" width="400px">
+      <p>꼬질꼬질하지만 귀엽다</p>
+    </div>
+  </div>
+  <p>
+    <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://web2-txm9c50pxb.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</p>
+</body>
+</html>
